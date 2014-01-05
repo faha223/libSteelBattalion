@@ -3,6 +3,8 @@
 #include <fstream>
 #include <cstdio>
 #include <cmath>
+#include <thread>
+#include <chrono>
 using namespace std;
 using namespace SteelBattalion;
 
@@ -59,7 +61,7 @@ int main()
 							device.setLEDState(Gear5, light, false);
 							device.setLEDState(Gear2, light, true);
 							device.setLEDState(GearR, light, true);
-							usleep(10000);
+							std::this_thread::sleep_for(std::chrono::milliseconds(10000));
 						}
 					}
 					device.resetLEDs();
@@ -86,7 +88,7 @@ int main()
 							if(intensity == 0)
 								up = true;
 							device.setLEDState(ButtonToLED(buttons[i]), intensity, true);
-							usleep(10000);
+							std::this_thread::sleep_for(std::chrono::milliseconds(10000));
 						}
 						device.resetLEDs();
 					}
@@ -287,12 +289,12 @@ int main()
 //						for(int c = 0; c < 34; ++c)
 //							printf("%c", buffer[c]);
 						if(i < 331)
-							usleep(10000);
+							std::this_thread::sleep_for(std::chrono::milliseconds(10000));
 						else
 						{
 //							for(int c = 0; c < 34; ++c)
 //								printf("%c", buffer[c]);
-							usleep(20000);
+							std::this_thread::sleep_for(std::chrono::milliseconds(20000));
 						}
 					}
 					device.resetLEDs();
@@ -316,7 +318,7 @@ int main()
 					{
 						device.setRawLEDData(animation1[frame]);
 						device.refreshLEDs();
-						usleep(10000);
+						std::this_thread::sleep_for(std::chrono::milliseconds(10000));
 						++frame;
 						if(frame > 44)
 							frame = 0;
@@ -344,7 +346,7 @@ int main()
 					{
 						device.setRawLEDData(animation2[i]);
 						device.refreshLEDs();
-						usleep(10000);
+						std::this_thread::sleep_for(std::chrono::milliseconds(10000));
 					}
 					device.resetLEDs();
 					for(size_t i = 0; i < 389; ++i)

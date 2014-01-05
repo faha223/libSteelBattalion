@@ -35,87 +35,87 @@ namespace SteelBattalion
 	enum ControllerLEDEnum
 	{	EmergencyEject = 4,			//	 4
 		CockpitHatch,				//	 5
-		Ignition,				//	 6
-		Start,					//	 7
-		OpenClose,				//	 8
+		Ignition,					//	 6
+		Start,						//	 7
+		OpenClose,					//	 8
 		MapZoomInOut,				//	 9
-		ModeSelect,				//	10
-		SubMonitorModeSelect,			//	11
+		ModeSelect,					//	10
+		SubMonitorModeSelect,		//	11
 		MainMonitorZoomIn,			//	12
 		MainMonitorZoomOut,			//	13
-		ForecastShootingSystem,			//	14
+		ForecastShootingSystem,		//	14
 		Manipulator,				//	15
 		LineColorChange,			//	16
-		Washing,				//	17
+		Washing,					//	17
 		Extinguisher,				//	18
-		Chaff,					//	19
-		TankDetach,				//	20
-		Override,				//	21
-		NightScope,				//	22
-		F1LED,					//	23
-		F2LED,					//	24
-		F3LED,					//	25
+		Chaff,						//	19
+		TankDetach,					//	20
+		Override,					//	21
+		NightScope,					//	22
+		F1LED,						//	23
+		F2LED,						//	24
+		F3LED,						//	25
 		MainWeaponControl,			//	26
 		SubWeaponControl,			//	27
 		MagazineChange,				//	28
-		Comm1,					//	29
-		Comm2,					//	30
-		Comm3,					//	31
-		Comm4,					//	32
-		Comm5,					//	33
+		Comm1,						//	29
+		Comm2,						//	30
+		Comm3,						//	31
+		Comm4,						//	32
+		Comm5,						//	33
 
-		GearR = 35,				//	35
-		GearN,					//	36
-		Gear1,					//	37
-		Gear2,					//	38
-		Gear3,					//	39
-		Gear4,					//	40
-		Gear5					//	41
+		GearR = 35,					//	35
+		GearN,						//	36
+		Gear1,						//	37
+		Gear2,						//	38
+		Gear3,						//	39
+		Gear4,						//	40
+		Gear5						//	41
 	};
 
 	enum ButtonEnum
 	{
-		RIGHT_JOY_MAIN_WEAPON,			//	 0
+		RIGHT_JOY_MAIN_WEAPON,		//	 0
 		RIGHT_JOY_FIRE,				//	 1
 		RIGHT_JOY_LOCK_ON,			//	 2
 		COCKPIT_HATCH,				//	 3
-		IGNITION,				//	 4
-		START,					//	 5
-		EJECT,					//	 6
-		MULTIMON_OPEN_CLOSE,			//	 7
-		MULTIMON_MAP_ZOOM_IN_OUT,		//	 8
-		MULTIMON_MODE_SELECT,			//	 9
-		MULTIMON_SUB_MONITOR,			//	10
+		IGNITION,					//	 4
+		START,						//	 5
+		EJECT,						//	 6
+		MULTIMON_OPEN_CLOSE,		//	 7
+		MULTIMON_MAP_ZOOM_IN_OUT,	//	 8
+		MULTIMON_MODE_SELECT,		//	 9
+		MULTIMON_SUB_MONITOR,		//	10
 		MAINMON_ZOOM_IN,			//	11
 		MAINMON_ZOOM_OUT,			//	12
-		WASHING,				//	13
+		WASHING,					//	13
 		EXTINGUISHER,				//	14
-		CHAFF,					//	15
+		CHAFF,						//	15
 		WEAPON_CON_MAIN,			//	16
 		WEAPON_CON_SUB,				//	17
 		WEAPON_CON_MAG,				//	18
-		FSS,					//	19
-		MANIP,					//	20
+		FSS,						//	19
+		MANIP,						//	20
 		LINE_COLOR_CHANGE,			//	21
 		TANK_DETACH,				//	22
-		OVERRIDE,				//	23
+		OVERRIDE,					//	23
 		NIGHT_SCOPE,				//	24
-		F1,					//	25
-		F2,					//	26
-		F3,					//	27
-		COM1,					//	28
-		COM2,					//	29
-		COM3,					//	30
-		COM4,					//	31
-		COM5,					//	32
-		LEFT_JOY_SIGHT_CHANGE,			//	33
-		TOGGLE_FILTER_CONTROL,			//	34
-		TOGGLE_OXYGEN_SUPPLY,			//	35
-		TOGGLE_FUEL_FLOW_RATE,			//	36
+		F1,							//	25
+		F2,							//	26
+		F3,							//	27
+		COM1,						//	28
+		COM2,						//	29
+		COM3,						//	30
+		COM4,						//	31
+		COM5,						//	32
+		LEFT_JOY_SIGHT_CHANGE,		//	33
+		TOGGLE_FILTER_CONTROL,		//	34
+		TOGGLE_OXYGEN_SUPPLY,		//	35
+		TOGGLE_FUEL_FLOW_RATE,		//	36
 		TOGGLE_BUFFER_MAT,			//	37
 		TOGGLE_VT_LOCATION,			//	38
-		TUNER_DIAL_STATE_CHANGE,		//	39
-		GEAR_LEVER_STATE_CHANGE			//	40
+		TUNER_DIAL_STATE_CHANGE,	//	39
+		GEAR_LEVER_STATE_CHANGE		//	40
 	};
 
 	struct ButtonMask

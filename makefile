@@ -1,7 +1,7 @@
-CXX = g++
+CXX = g++ -std=c++11
 FLAGS = -Wall -c
 
-default: test32 test64
+default: test64
 
 # The 32-bit version of the Steel Battalion Controller interface library
 libSteelBattalion32.so: SteelBattalion.h SteelBattalion.cpp Buttons.h
